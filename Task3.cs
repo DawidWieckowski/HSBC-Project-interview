@@ -14,7 +14,7 @@ namespace Excersise
                 if (Math.Abs(result) > Math.Abs(array[i]))
                     result = array[i];
 
-            if (Array.Exists(array, element => element == Math.Abs(result)))
+            if (result < 0 && Array.Exists(array, element => element == Math.Abs(result)))
                 result = Math.Abs(result);
 
             return result;
